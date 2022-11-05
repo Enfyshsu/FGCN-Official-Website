@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('#navbar').load('view/nav.html');
   $('#research').load('view/research.html');
   $('#activity').load('view/activity.html');
+  $('#publication').load('view/publication.html');
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
