@@ -1,6 +1,5 @@
 $(document).ready(function() {
   $('#navbar').load('view/nav.html');
-  $('#home').load('view/home.html');
   $('#research').load('view/research.html');
   $('#activity').load('view/activity.html');
 });

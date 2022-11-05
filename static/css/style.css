@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&display=swap'); */
-
-/* *, *:before, *:after 
-{ box-sizing: border-box; } */
 
 body {
   font-family: 'Quicksand', sans-serif;
   overflow-x: hidden;
-  /* font-family: 'Noto Serif TC', serif; */
 }
 
 .area {
@@ -15,7 +10,6 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background: url("../img/cloud.svg"), #EBF5FB;
-  /*background: #EBF5FB;*/
   animation: cloudmove 30s infinite linear;
   -webkit-animation: cloudmove 30s infinite linear;
   /*animation: cloudmove 5s infinite linear;*/
@@ -310,6 +304,21 @@ label a:hover {
 
 .card-row {
   padding-bottom: 15px;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px 5px #dddddd;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5% !important;
+  border: 0;
+  background-color: #ffffff00;
+}
+
+.carousel-caption {
+  background-color: #00000088;
 }
 
 /* ipad 橫 */
