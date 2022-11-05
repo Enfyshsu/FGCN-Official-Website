@@ -1,8 +1,9 @@
 $(document).ready(function() {
   $('#navbar').load('view/nav.html');
   $('#research').load('view/research.html');
-  $('#activity').load('view/activity.html');
-  $('#publication').load('view/publication.html');
+  $('#activities').load('view/activities.html');
+  $('#publications').load('view/publications.html');
+  $('#about').load('view/about.html');
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -14,6 +15,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
   });
 });
+
+function readJsonFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    var allText;
+    rawFile.open("GET", file, false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                allText = rawFile.responseText;
+            }
+        }
+    }
+    rawFile.send(null);
+    return allText;
+}
 
 anime.timeline({loop: false})
   .add({
