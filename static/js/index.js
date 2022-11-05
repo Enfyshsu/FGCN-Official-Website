@@ -4,6 +4,16 @@ $(document).ready(function() {
   $('#activity').load('view/activity.html');
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
+
 anime.timeline({loop: false})
   .add({
     targets: '.shift-in-1',

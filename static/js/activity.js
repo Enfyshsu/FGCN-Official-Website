@@ -6,7 +6,7 @@ async function init()
 
 function renderActivityImg(data)
 {
-    var images;
+    var images = '';
     images += 
             '<div class="carousel-item active" data-bs-interval="5000">'
             + '<img src="' + data[0].path + '" class="d-block w-100">'
