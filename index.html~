@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="area">
+  <div class="area area2">
     <div id="navbar"></div>
     <section id="home">
       <div class="container">

@@ -14,12 +14,14 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background: #FF0000;
+    background: url("../img/cloud.svg"), #EBF5FB;
     /*background: #EBF5FB;*/
-    /*animation: fadeIn 2s;*/
-    /* background-image: url("../img/cloud.svg"); */
+    animation: cloudmove 30s infinite linear;
+    -webkit-animation: cloudmove 30s infinite linear;
+    /*animation: cloudmove 5s infinite linear;*/
+    /*background-image: url("../img/cloud.svg"); */
 }
-
+/*
 .area2 {
     height: 100vh;
     width: 100vw;
@@ -27,11 +29,29 @@ body {
     background: url('../img/cloud.svg');
     animation: fadeIn 2s;
 }
-
+*/
+/*
 @keyframes fadeIn {
   0% { opacity: 0.3; }
   100% { opacity: 1; }
+}*/
+
+
+@keyframes cloudmove{
+  0%   { background-position: 0% 10%, 0% 0%; opacity: 1, 0; }
+  100% { background-position: 100% 10%, 100% 0%;opacity: 1, 1; }
 }
+
+@-webkit-keyframes cloudmove{
+  0%   { background-position: 0% 10%, 0% 0%; opacity: 1, 0;}
+  100% { background-position: 100% 10%, 100% 0%; opacity:1, 1;}
+}
+
+
+/* @keyframes cloudmove{
+  0%   { opacity: 0%, 1.0; }
+  100% { opacity: 0%, 1.0 ; }
+} */
 
 .welcome {
     padding-top: 180px;
@@ -62,19 +82,6 @@ body {
 .lab-name {
     padding-top: 1.5rem;
 }
-
-/* .navbar {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2rem;
-    padding-top: 1.5rem !important;
-    overflow-x: hidden;
-}
-
-.navbar-collapse {
-    justify-content: space-around;
-} */
-
-/*  */
 
 #navbar {
     overflow-x: hidden;
@@ -187,7 +194,6 @@ label .menu {
     /* font-size: 1.1em; */
   }
 
-/*  */
 
 @media screen and (max-width: 1200px) {
   .welcome {
@@ -238,11 +244,4 @@ label input:checked + .menu {
     label input:checked + .menu {
       box-shadow: 10vh 5vh 10vw 60vw #EBF5FB;
     }
-
-    /* label a {
-        font-size: 2em;
-      }
-      label ul {
-        top: 20%;
-      } */
 }
