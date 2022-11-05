@@ -1,7 +1,6 @@
 $(document).ready(function() {
   $('#navbar').load('view/nav.html');
   $('#research').load('view/research.html');
-
 });
 
 anime.timeline({loop: false})
