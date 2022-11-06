@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $('#navbar').load('view/nav.html');
+  $('#navbar').load('view/navbar.html');
   $('#research').load('view/research.html');
   $('#activities').load('view/activities.html');
   $('#publications').load('view/publications.html');

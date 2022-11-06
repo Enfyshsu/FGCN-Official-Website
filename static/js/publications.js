@@ -6,11 +6,11 @@ async function init()
 
 function renderPublications(data)
 {
-    var all_papers = '';
+    let all_papers = '';
     data.forEach(element => {
         all_papers += '<div class="paper-topic">' + element.topic + '</div>';
         all_papers += '<ul>';
-        var topic_papers = element.papers;
+        let topic_papers = element.papers;
         topic_papers.forEach(paper => {
             all_papers += '<li>' + paper.authors + ', <b>'
                         + paper.title + '</b>, '
