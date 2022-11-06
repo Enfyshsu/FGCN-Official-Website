@@ -1,11 +1,9 @@
-async function init()
-{
+async function init() {
     let data = JSON.parse(await readJsonFile("model/publications.json"));
     await renderPublications(data["publications"]);
 }
 
-function renderPublications(data)
-{
+function renderPublications(data) {
     let all_papers = '';
     data.forEach(element => {
         all_papers += '<div class="paper-topic">' + element.topic + '</div>';
@@ -13,8 +11,8 @@ function renderPublications(data)
         let topic_papers = element.papers;
         topic_papers.forEach(paper => {
             all_papers += '<li>' + paper.authors + ', <b>'
-                        + paper.title + '</b>, '
-                        + paper.publisher + '</li>';
+                + paper.title + '</b>, '
+                + paper.publisher + '</li>';
         });
         all_papers += '</ul>';
     });
