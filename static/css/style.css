@@ -281,6 +281,10 @@ label a:hover {
   /* font-size: 1.1em; */
 }
 
+.modal {
+  font-family: 'Quicksand', sans-serif;
+}
+
 .card {
   width: 80% !important;
   border-radius: 15px !important;
@@ -385,6 +389,10 @@ label a:hover {
   opacity: 1;
 }
 
+#members {
+  padding-top: 40px;
+}
+
 .data-card {
   overflow: hidden;
   border-radius: 0.5em;
@@ -416,7 +424,7 @@ label a:hover {
   transition: color 0.45s ease;
 }
 .data-card:hover {
-  background: #5A8CAB;
+  background-color: #5A8CAB;
   transform: scale(1.02);
 }
 .data-card:hover h3 {
@@ -443,6 +451,20 @@ label a:hover {
   100% {
     transform: translateX(0.125em);
   }
+}
+
+.footer {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #355d76c0;
+  color: #FFF;
+  text-align: center;
+  padding-bottom: 25px; 
+}
+
+.copyright {
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #D6D6D6;
 }
 
 /* ipad 橫 */
@@ -474,6 +496,10 @@ label a:hover {
 
   .papers {
     font-size: 1.2rem;
+  }
+
+  #members {
+    padding-top: 20px;
   }
 
 }

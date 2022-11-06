@@ -4,6 +4,7 @@ $(document).ready(function() {
   $('#activities').load('view/activities.html');
   $('#publications').load('view/publications.html');
   $('#about').load('view/about.html');
+  $('#footer').load('view/footer.html');
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
