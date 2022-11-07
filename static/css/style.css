@@ -7,6 +7,46 @@ body {
 
 }
 
+#joinus {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+#joinus img {
+  width: 300px;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px)
+  }
+
+  to {
+    transform: translateY(-10px)
+  }
+}
+
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px)
+  }
+
+  to {
+    transform: translateY(-10px)
+  }
+}
+
+.bounce {
+  animation: bounce 0.4s infinite alternate;
+  -webkit-animation: bounce 0.4s infinite alternate;
+}
+
+.modal-body {
+  font-size: 1.2rem;
+}
+
 .navbar-toggler {
   margin: 20px;
   border: 0 !important;
@@ -97,6 +137,12 @@ section {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
   color: #807A79;
+}
+
+.transparent-bg {
+  background-color: #ffffff88;
+  padding: 25px;
+  border-radius: 10px;
 }
 
 .welcome {
@@ -242,6 +288,24 @@ label a:hover {
   padding-bottom: 15px;
 }
 
+.nav-link {
+  color: #807A79 !important;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #495057 !important;
+}
+
+.project-content {
+  padding-top: 2rem;
+}
+
+iframe {
+  width: 90%;
+  height: calc(80vw*10/12*9/16);
+}
+
 .carousel-inner {
   border-radius: 10px;
   box-shadow: 0 10px 20px 5px #dddddd;
@@ -261,12 +325,9 @@ label a:hover {
 .papers {
   text-align: left;
   font-size: 1.3rem;
-  background-color: #ffffff88;
-  padding: 25px;
-  border-radius: 10px;
 }
 
-.papers ul li {
+.papers ol li {
   padding-bottom: 18px;
 }
 
@@ -277,8 +338,9 @@ label a:hover {
   padding: 1rem;
 }
 
-.department {
-  text-align: left;
+.btn-more {
+  text-align: center;
+  padding: 20px;
 }
 
 .team4 {
@@ -395,6 +457,52 @@ label a:hover {
   }
 }
 
+.alumni {
+  font-weight: 600;
+}
+
+.alumni hr {
+  border-width: 3px;
+}
+
+.alumni-box {
+  padding-bottom: 20px;
+}
+
+.alumni-detail hr {
+  width: 70%;
+  margin: 0 0 0.5rem 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: #00000050;
+}
+
+.alumni-type {
+  font-size: 1.8rem;
+}
+
+.alumni-name {
+  font-size: 1.6rem;
+}
+
+.alumni-name a {
+  text-decoration: none;
+  color: #5A8CAB;
+}
+
+.alumni-name a:hover {
+  color: #627084;
+}
+
+.alumni-count {
+  font-size: 2.5rem;
+}
+
+.alumni-company {
+  font-size: 1.3rem;
+  padding-bottom: 25px;
+}
+
 .footer {
   font-family: 'Quicksand', sans-serif;
   background-color: #355d76c0;
@@ -411,6 +519,15 @@ label a:hover {
 
 /* ipad 橫 */
 @media screen and (max-width: 1200px) {
+  #joinus {
+    right: 10px;
+    bottom: 5px;
+  }
+
+  #joinus img {
+    width: 200px;
+  }
+
   .welcome {
     padding-top: 100px;
   }
@@ -423,12 +540,12 @@ label a:hover {
     width: 100% !important;
   }
 
-  .paper-topic {
-    font-size: 1.4rem;
-  }
-
   .papers {
     font-size: 1.2rem;
+  }
+
+  .paper-topic {
+    font-size: 1.4rem;
   }
 
   #members {
@@ -450,10 +567,19 @@ label a:hover {
   .card {
     width: 85% !important;
   }
+
+  iframe {
+    min-width: 95%;
+    height: calc(95vw*9/16);
+  }
 }
 
 /* 手機 */
 @media screen and (max-width: 576px) {
+  #joinus img {
+    width: 150px;
+  }
+
   .welcome {
     padding-top: 130px;
   }
